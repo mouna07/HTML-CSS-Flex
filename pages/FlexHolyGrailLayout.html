@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CodePen - Demo FlexBox 3</title>
+  <style>
+    body {
+      padding: 2em;
+    }
+
+    .headerContainer {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      background: tomato;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .footerContainer {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      background: lightgreen;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .mainContainer {
+      display: flex;
+      flex-flow: row wrap;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .mainContentItem {
+      text-align: left;
+      background: deepskyblue;
+    }
+
+    .sideBarLeftItem {
+      background: gold;
+    }
+
+    .sideBarRightItem {
+      background: hotpink;
+    }
+
+    article {
+      padding: 10px;
+      margin: 10px;
+      background: aqua;
+    }
+
+    .sideBarItem {
+      flex: 1 0 0;
+      border: 0px solid green;
+    }
+
+    .mainContentItem {
+      flex: 3 0px;
+    }
+
+    .sideBarLeftItem {
+      order: 1;
+    }
+
+    .mainContentItem {
+      order: 2;
+    }
+
+    .sideBarRightItem {
+      order: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="headerContainer">
+    <h1>HEADER - Web Browser Flex</h1>
+  </header>
+  <div class="mainContainer">
+    <section class="mainContentItem">
+      <article>
+        <h2>Google Chrome</h2>
+        <p>
+          Google Chrome is a web browser developed by Google, released in
+          2008. Chrome is the world's most popular web browser today!. You
+          will see alot of the advancements in the browser day by day and alot
+          to learn from the layout and features of the browser
+        </p>
+      </article>
+      <article>
+        <h2>Mozilla Firefox</h2>
+        <p>
+          Mozilla Firefox is an open-source web browser developed by Mozilla.
+          Firefox has been the second most popular web browser since January,
+          2018.
+        </p>
+      </article>
+
+      <article>
+        <h2>Microsoft Edge</h2>
+        <p>
+          Microsoft Edge is a web browser developed by Microsoft, released in
+          2015. Microsoft Edge replaced Internet Explorer.
+        </p>
+      </article>
+    </section>
+    <sidebar class="sideBarItem sideBarLeftItem">
+      <div class="center">
+        <p>Left Side Bar</p>
+      </div>
+    </sidebar>
+    <sidebar class="sideBarItem sideBarRightItem">
+      <div class="center">
+        <p>Right Side Bar</p>
+      </div>
+    </sidebar>
+  </div>
+  <footer class="footerContainer">Footer</footer>
+</body>
+
+</html>
